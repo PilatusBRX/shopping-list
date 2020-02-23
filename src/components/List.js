@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
 import FlipMove from 'react-flip-move';
+import PropTypes from 'prop-types';
 
 class List extends Component {
   render() {
@@ -25,4 +26,8 @@ class List extends Component {
     );
   }
 }
+List.propTypes = {
+  items: PropTypes.array.isRequired
+};
+
 export default List;

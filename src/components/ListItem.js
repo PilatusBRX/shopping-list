@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FaTrash } from 'react-icons/fa';
-import styled from 'styled-components';
 import { ItemWrapper } from './ItemStyle';
+import PropTypes from 'prop-types';
 
 class Item extends Component {
   doneStyle = () => {
@@ -40,5 +40,9 @@ class Item extends Component {
     );
   }
 }
+
+Item.propTypes = {
+  item: PropTypes.object.isRequired
+};
 
 export default Item;
