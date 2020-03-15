@@ -21,6 +21,7 @@ class Item extends Component {
           <div className='float-left'>
             <p style={this.doneStyle()}>
               <input
+               checked={this.props.item.done}
                 type='checkbox'
                 id='check'
                 onChange={this.props.markDone.bind(this, id)}
